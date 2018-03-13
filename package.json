@@ -1,18 +1,19 @@
 {
   "name": "reason-to-do",
   "scripts": {
-    "start": "bsb -make-world -w",
-    "js": "bsb -make-world",
-    "build": "webpack -w",
-    "clean": "bsb -clean-world"
+    "build": "webpack -w"
   },
   "dependencies": {
     "react": "^15.4.2",
-    "react-dom": "^15.4.2",
-    "reason-react": "0.2.4"
+    "react-dom": "^15.4.2"
   },
   "devDependencies": {
-    "bs-platform": "^2.0.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-transform-es2015-destructuring": "^6.23.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
     "webpack": "^3.0.0"
   }
 }

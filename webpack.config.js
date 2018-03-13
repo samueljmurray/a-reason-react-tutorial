@@ -1,8 +1,19 @@
 module.exports = {
-  entry: './lib/js/src/Main.js',
+  entry: './src/Main.js',
   output: {
     path: __dirname + '/public',
     filename: 'bundle.js',
   },
+  module: {
+    rules: [
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: {
+          loader: "babel-loader"
+        }
+      }
+    ]
+  }
 };
 
